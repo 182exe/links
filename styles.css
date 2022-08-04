@@ -1,0 +1,43 @@
+:root {
+  --bg1: #24373b;
+  --bg2: #0d191b;
+  --main1: #Cd00ff;
+  --main2: #6814b5;
+}
+body {
+    background: var(--bg1);
+    font-family: Barlow Semi Condensed, Sans-Serif;
+    color: white;
+    font-size: 300%;
+    text-shadow: 0px 0px 10px #000000;
+    text-align: center;
+    animation: bgRotate 4s infinite;
+}
+.square {
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(to bottom right, var(--main2), var(--main1));
+    box-shadow: 0px 0px 10px #000000;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    animation: warp 4s infinite;
+}
+@keyframes warp {
+    0.00% { transform: translate(0px, 0px) rotate(0deg); height: 100px; width: 130px; background: var(--main1); }
+    12.5% { transform: translate(-30px, -30px) rotate(20deg); height: 130px; width: 100px; background: var(--main1); }
+    25.0% { transform: translate(0px, 0px) rotate(0deg); height: 100px; width: 100px; background: var(--main2); }
+    37.5% { transform: translate(30px, -30px) rotate(-20deg); height: 130px; width: 100px; background: var(--main2); }
+    50.0% { transform: translate(0px, 0px) rotate(0deg); height: 100px; width: 130px; background: var(--main1); }
+    62.5% { transform: translate(-30px, 15px) rotate(-20deg); height: 130px; width: 100px; background: var(--main1); }
+    75.0% { transform: translate(0px, 0px) rotate(0deg); height: 100px; width: 100px; background: var(--main2); }
+    87.5% { transform: translate(30px, 15px) rotate(20deg); height: 130px; width: 100px; background: var(--main2); }
+    0100% { transform: translate(0px, 0px) rotate(0deg); height: 100px; width: 130px; background: var(--main1); }
+}
+@keyframes bgRotate {
+    0% { background: var(--bg1); color: var(--main1); }
+    25% { background: var(--bg2); color: var(--main2); }
+    50% { background: var(--bg1); color: var(--main1); }
+    75% { background: var(--bg2); color: var(--main2); }
+    100% { background: var(--bg1); color: var(--main1); }
+}
