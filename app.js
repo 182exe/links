@@ -45,6 +45,8 @@ packList = [
     "templateblockhit",
     "defaulttextures-16",
     "warmoceans-32",
+    "echonicnetwork-16",
+    "pinkdrink-16"
 ];
 packUrlList = [
     "https://www.mediafire.com/file/8hvbolmsjltofxk/%2521_%25C2%25A75Purple_%25C2%25A76Synthwave_%25C2%25A72%255B32x%255D%25C2%25A77.zip/file",
@@ -82,7 +84,9 @@ packUrlList = [
     "https://www.mediafire.com/file/xzi7d7gcm5z1qpr/%25C2%25A7e1.14_%25C2%25A72%25C2%25A7Faith_%25C2%25A76%255B64x%255D_%25C2%25A77%255Bv2.5%255D.zip/file",
     "https://www.mediafire.com/file/emv8oy1tlqxm0ib/%2521_Blockhit_Fix_%255B182%2527s_Template%255D.zip/file",
     "https://www.mediafire.com/file/82sjodi19ntzc3b/Default_Textures_%255B1.8.9%255D.zip/file",
-    "https://www.mediafire.com/file/6a8cef83vu79a70/%2523WARMOCEANS_PRIVATE.zip/file"
+    "https://www.mediafire.com/file/6a8cef83vu79a70/%2523WARMOCEANS_PRIVATE.zip/file",
+    "https://www.mediafire.com/file/w8kqwtbp99j5a78/%2521_%257E_Echonic_Network_Pack_%257E.zip/file",
+    "https://www.mediafire.com/file/b0lglmho1619r7i/%2523pinkdrink.zip/file"
 ];
 
 let id = new URLSearchParams(window.location.search).get('id');
