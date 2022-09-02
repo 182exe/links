@@ -46,7 +46,9 @@ packList = [
     "defaulttextures-16",
     "warmoceans-32",
     "echonicnetwork-16",
-    "pinkdrink-16"
+    "pinkdrink-16",
+    "oldbutgold-16",
+    "akatsuki-16"
 ];
 packUrlList = [
     "https://www.mediafire.com/file/8hvbolmsjltofxk/%2521_%25C2%25A75Purple_%25C2%25A76Synthwave_%25C2%25A72%255B32x%255D%25C2%25A77.zip/file",
@@ -86,7 +88,9 @@ packUrlList = [
     "https://www.mediafire.com/file/82sjodi19ntzc3b/Default_Textures_%255B1.8.9%255D.zip/file",
     "https://www.mediafire.com/file/6a8cef83vu79a70/%2523WARMOCEANS_PRIVATE.zip/file",
     "https://www.mediafire.com/file/w8kqwtbp99j5a78/%2521_%257E_Echonic_Network_Pack_%257E.zip/file",
-    "https://www.mediafire.com/file/b0lglmho1619r7i/%2523pinkdrink.zip/file"
+    "https://www.mediafire.com/file/b0lglmho1619r7i/%2523pinkdrink.zip/file",
+    "https://www.mediafire.com/file/8t9zm652eeu11z6/%25C2%25A74Old_But_Gold_%25E2%259D%25A4.zip/file",
+    "https://www.mediafire.com/file/58u6wvp0t5pwrn7/Akastuki_%255B16x%255D_Private.zip/file"
 ];
 
 let id = new URLSearchParams(window.location.search).get('id');
