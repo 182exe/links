@@ -50,6 +50,7 @@ packList = [
     "oldbutgold-16",
     "akatsuki-16",
     "ridinwitnoroof-32"
+    "poland-32"
 ];
 packUrlList = [
     "https://www.mediafire.com/file/8hvbolmsjltofxk/%2521_%25C2%25A75Purple_%25C2%25A76Synthwave_%25C2%25A72%255B32x%255D%25C2%25A77.zip/file",
@@ -93,6 +94,7 @@ packUrlList = [
     "https://www.mediafire.com/file/8t9zm652eeu11z6/%25C2%25A74Old_But_Gold_%25E2%259D%25A4.zip/file",
     "https://www.mediafire.com/file/58u6wvp0t5pwrn7/Akastuki_%255B16x%255D_Private.zip/file",
     "https://www.mediafire.com/file/tgvyt3c5ctozthq/#§5RIDIN+WIT+NO+ROOF.zip/file"
+    "https://www.mediafire.com/file/a0swvfolyf4ufvo/§fP§cO§5LAND.zip/file",
 ];
 
 let id = new URLSearchParams(window.location.search).get('id');
