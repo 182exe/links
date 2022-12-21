@@ -52,7 +52,8 @@ packList = [
     "ridinwitnoroof-32",
     "poland-32",
     "darkthicket-16",
-    "jingle-16"
+    "jingle-16",
+    "unknownblue-16"
 ];
 packUrlList = [
     "https://www.mediafire.com/file/8hvbolmsjltofxk/%2521_%25C2%25A75Purple_%25C2%25A76Synthwave_%25C2%25A72%255B32x%255D%25C2%25A77.zip/file",
@@ -98,7 +99,8 @@ packUrlList = [
     "https://www.mediafire.com/file/tgvyt3c5ctozthq/#§5RIDIN+WIT+NO+ROOF.zip/file",
     "https://www.mediafire.com/file/a0swvfolyf4ufvo/§fP§cO§5LAND.zip/file",
     "https://www.mediafire.com/file/wh6534s4fpf7jjw/%2521_%25C2%25A7l%255B-_DARK_THICKET_-%255D_%25C2%25A77%25C2%25A7o16x.zip/file",
-    "https://www.mediafire.com/file/mpctnsh407u4tqn/%2521_%25C2%25A7c%25EF%25BC%25AA%25C2%25A74%25EF%25BC%25A9%25C2%25A7a%25EF%25BC%25AE%25C2%25A72%25EF%25BC%25A7%25C2%25A7c%25EF%25BC%25AC%25C2%25A74%25EF%25BC%25A5_%25C2%25A76%25E2%2598%2595_%25C2%25A7f%25E3%2580%258E%25C2%25A7b%25E2%2591%25A0%25C2%25A79%25E2%2591%25A5%25C2%25A71%25E3%2580%258F.zip/file"
+    "https://www.mediafire.com/file/mpctnsh407u4tqn/%2521_%25C2%25A7c%25EF%25BC%25AA%25C2%25A74%25EF%25BC%25A9%25C2%25A7a%25EF%25BC%25AE%25C2%25A72%25EF%25BC%25A7%25C2%25A7c%25EF%25BC%25AC%25C2%25A74%25EF%25BC%25A5_%25C2%25A76%25E2%2598%2595_%25C2%25A7f%25E3%2580%258E%25C2%25A7b%25E2%2591%25A0%25C2%25A79%25E2%2591%25A5%25C2%25A71%25E3%2580%258F.zip/file",
+    "https://www.mediafire.com/file/8u7rlwojawu1ukj/unknown_blue.zip/file"
 ];
 
 let id = new URLSearchParams(window.location.search).get('id');
