@@ -30,7 +30,6 @@ const objMat = new THREE.MeshPhongMaterial({
     specular: 0x222222,
     color: 0x000000,
     emissive: 0x000000,
-    flatshading: false
 });
 
 const object = new THREE.Mesh(objGeo, objMat);
