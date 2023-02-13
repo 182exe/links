@@ -5,11 +5,11 @@ document.querySelector('#text').classList.replace('floatdown', 'floatup');
 
 function success(link, param1, param2) {
     document.querySelector(`#text > #message`).innerHTML = `PRESS ANY KEY TO CONTINUE...`;
-    sendMessage(`> 🔹 Successfully redirected to \`${link}\`: \`${param1}/${param2}\``);
+    sendMessage(`> 🔹 Successfully redirected to ${link}. \n \`${param1}/${param2}\``);
 };
 function fail(link, param1, param2) {
     document.querySelector(`#text > #message`).innerHTML = `INVALID LINK. PRESS ANY KEY TO CONTINUE...`;
-    sendMessage(`> 🔸 Failed to redirect: \`${param1}/${param2}\``);
+    sendMessage(`> 🔸 Failed to redirect. \n \`${param1}/${param2}\``);
 };
 if (Object.keys(params).length === 2) {
     var type = Object.values(params)[0];
