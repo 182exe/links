@@ -1,2 +1,2 @@
 # links
-Website redirects.
+Website redirecting system for 182exe.xyz.

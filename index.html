@@ -2,21 +2,35 @@
 <html>
     <head>
         <title>182exe's Redirecting Redux</title>
+		<meta name="description" content="A small website where 182exe can host links.">
+		<meta name="author" content="182exe">
+		<meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="title" content="182exe's Redirecting Redux"/>
         <meta name="og:title" content="182exe's Redirecting Redux"/>
-        <meta name="og:description" content="182exe's crappy link redirecting webapp. If you're seeing this, ily and please have the greatest day ever <3"/>
+        <meta name="og:description" content="If you're seeing this, ily and please have the greatest day ever <3"/>
         <meta name="og:type" content="website"/>
         <meta name="og:url" content="https://github.com/182exe/links"/>
         <meta name="og:image" content="https://raw.githubusercontent.com/182exe/resources/main/linklogo.png"/>
         <link rel="shortcut icon" type="image/jpg" href="https://raw.githubusercontent.com/182exe/resources/main/linklogo.png"/>
         <link rel="icon" type="image/jpg" href="https://raw.githubusercontent.com/182exe/resources/main/linklogo.png"/>
         <link rel="stylesheet" href="styles.css">
-        <link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
     </head>
     <body>
-        <p1 id="display"></p1>
-        <div class='square' style="left: 45%"></div>
-        <script src="app.js"></script>
+        <div id="text" class="floatdown">
+			<h id="label">182EXE</h>
+			<p id="message"></p>
+		</div>
+        <script type="module" src="./links.js"></script>
+        <script type="module" src="./main.js"></script>
+        <script src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+		<script type="importmap">
+		{
+			"imports": {
+			    "three": "https://unpkg.com/three/build/three.module.js"
+			}
+		}
+		</script>
+		<script type="module" src="./3d.js"></script>
     </body>
 </html>

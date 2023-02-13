@@ -1,43 +1,61 @@
-:root {
-  --bg1: #24243B;
-  --bg2: #0D0E1B;
-  --main1: #Cd00ff;
-  --main2: #6814b5;
-}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Rubik:ital@1&display=swap');
 body {
-    background: var(--bg1);
-    font-family: Barlow Semi Condensed, Sans-Serif;
+    margin: 0;
+    height: 100%;
+    font-family: Rubik, Sans-Serif;
     color: white;
     font-size: 300%;
-    text-shadow: 0px 0px 10px #000000;
-    text-align: center;
-    animation: bgRotate 4s infinite;
+    overflow: hidden;
+    display: grid;
+    justify-items: center;
+    background: #111111;
 }
-.square {
-    height: 100px;
-    width: 100px;
-    background-image: linear-gradient(to bottom right, var(--main2), var(--main1));
-    box-shadow: 0px 0px 10px #000000;
-    border-radius: 20px;
+.bgi {
     position: absolute;
-    top: 50%;
-    animation: warp 4s infinite;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: #111111;
 }
-@keyframes warp {
-    0.00% { transform: translate(0px, 0px) rotate(0deg); height: 100px; width: 130px; background: var(--main1); }
-    12.5% { transform: translate(-30px, -30px) rotate(20deg); height: 130px; width: 100px; background: var(--main1); }
-    25.0% { transform: translate(0px, 0px) rotate(0deg); height: 100px; width: 100px; background: var(--main2); }
-    37.5% { transform: translate(30px, -30px) rotate(-20deg); height: 130px; width: 100px; background: var(--main2); }
-    50.0% { transform: translate(0px, 0px) rotate(0deg); height: 100px; width: 130px; background: var(--main1); }
-    62.5% { transform: translate(-30px, 15px) rotate(-20deg); height: 130px; width: 100px; background: var(--main1); }
-    75.0% { transform: translate(0px, 0px) rotate(0deg); height: 100px; width: 100px; background: var(--main2); }
-    87.5% { transform: translate(30px, 15px) rotate(20deg); height: 130px; width: 100px; background: var(--main2); }
-    0100% { transform: translate(0px, 0px) rotate(0deg); height: 100px; width: 130px; background: var(--main1); }
+.blackness {
+    background: black;
+    transition: 1s cubic-bezier(.75,0,1,0);
 }
-@keyframes bgRotate {
-    0% { background: var(--bg1); color: var(--main1); }
-    25% { background: var(--bg2); color: var(--main2); }
-    50% { background: var(--bg1); color: var(--main1); }
-    75% { background: var(--bg2); color: var(--main2); }
-    100% { background: var(--bg1); color: var(--main1); }
+
+.floatup {
+    animation: 1s float cubic-bezier(0,.75,0,1);
+}
+.floatdown {
+    transform: scale(10%) translatey(80%);
+    opacity: 0;
+    transition: 1s cubic-bezier(.75,0,1,0);
+}
+@keyframes float {
+    from { transform: scale(10%) translatey(80%); opacity: 0; }
+    tp { transform: scale(100%) translatey(0%); opacity: 1; }
+}
+
+#text {
+    font-size: 2vw;
+    color: white;
+    position: absolute;
+    top: 60%;
+    z-index: 4;
+    background-color: #00000066;
+    padding: 1vw;
+    border-radius: 1vw;
+    border: 2px solid #00000066;
+    box-shadow: 0px 0px 25px #00000066;
+    backdrop-filter: blur(4px);
+}
+h {
+    font-size: 1vw;
+    font-family: 'Orbitron', monospace
+}
+h, p {
+    font-weight: normal;
+    text-decoration: none;
+    margin: 0;
 }
