@@ -19,6 +19,7 @@ controls.autoRotateSpeed = 3;
 controls.enabled = false;
 
 let element = document.body.appendChild(renderer.domElement);
+document.querySelector(':root').style.setProperty('--rand360', `${Math.floor(Math.random() * 360)}deg`);
 element.classList.add('bgi');
 element.classList.add('floatup');
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -29,7 +30,7 @@ const objMat = new THREE.MeshPhongMaterial({
     shininess: randomShiny,
     specular: 0x222222,
     color: 0x000000,
-    emissive: 0x000000,
+    emissive: 0x000000
 });
 
 const object = new THREE.Mesh(objGeo, objMat);
