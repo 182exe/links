@@ -22,7 +22,7 @@ export const data = {
         "rustymagma-32": "https://www.mediafire.com/file/61diishoq6i7no3/%2521_%25C2%25A76%25C2%25A7lRusty%25C2%25A7e%25C2%25A7lMagma_%25C2%25A77%25C2%25A7o%255B32x%255D.zip/file",
         "emofault-16": "https://www.mediafire.com/file/wlpjn980ajp6jo8/%2521_%25C2%25A78%25C2%25A7lEmo%25C2%25A73%25C2%25A7lFault_%25C2%25A77%255B%25C2%25A7e16x%25C2%25A77%255D.zip/file",
         "zigzag-64": "https://www.mediafire.com/file/c6e5ycw88zrc0ti/%2521_%25C2%25A7cZigZag_%255B64x%255D.zip/file",
-        "royalblueuhc-16": "https://www.mediafire.com/file/e4ti5ve7c9lqu1y/%2521_%25C2%25A7dRoyal_Blue_%25C2%25A7eUHC_%25C2%25A77%255B16x%255D.zip/file",
+        "royalblue-16": "https://www.mediafire.com/file/e4ti5ve7c9lqu1y/%2521_%25C2%25A7dRoyal_Blue_%25C2%25A7eUHC_%25C2%25A77%255B16x%255D.zip/file",
         "hauptkommisar-32": "https://www.mediafire.com/file/3w7w5ukphkwsx1n/%2521_%25C2%25A7aHaupt%25C2%25A75kommisar%25C2%25A77_%255B32x%255D.zip/file",
         "diamondocean-16": "https://www.mediafire.com/file/pz6ecqm98sz07qk/%2521_%25C2%25A7b%25C2%25A7lDiamond_%25C2%25A73%25C2%25A7lOcean_%25C2%25A77%25C2%25A7l%255B16x%255D.zip/file",
         "oceanic-16": "https://www.mediafire.com/file/96vhnzupw6x0wu6/%2521_%25C2%25A73Ocea%25C2%25A7bnic_%25C2%25A7616x%25C2%25A77.zip/file",
@@ -58,6 +58,11 @@ export const data = {
         "darkthicket-16": "https://www.mediafire.com/file/wh6534s4fpf7jjw/%2521_%25C2%25A7l%255B-_DARK_THICKET_-%255D_%25C2%25A77%25C2%25A7o16x.zip/file",
         "jingle-16": "https://www.mediafire.com/file/mpctnsh407u4tqn/%2521_%25C2%25A7c%25EF%25BC%25AA%25C2%25A74%25EF%25BC%25A9%25C2%25A7a%25EF%25BC%25AE%25C2%25A72%25EF%25BC%25A7%25C2%25A7c%25EF%25BC%25AC%25C2%25A74%25EF%25BC%25A5_%25C2%25A76%25E2%2598%2595_%25C2%25A7f%25E3%2580%258E%25C2%25A7b%25E2%2591%25A0%25C2%25A79%25E2%2591%25A5%25C2%25A71%25E3%2580%258F.zip/file",
         "unknownblue-16": "https://www.mediafire.com/file/8u7rlwojawu1ukj/unknown_blue.zip/file",
-        "starlight-64": "https://www.mediafire.com/file/njdzyw06z6xirrq/%2521_%25C2%25A71st%25C2%25A79a%25C2%25A7br%25C2%25A7flig%25C2%25A7bh%25C2%25A79t.zip/file"
+        "starlight-64": "https://www.mediafire.com/file/njdzyw06z6xirrq/%2521_%25C2%25A71st%25C2%25A79a%25C2%25A7br%25C2%25A7flig%25C2%25A7bh%25C2%25A79t.zip/file",
+        "blockhit-tap": "https://www.mediafire.com/file/fpejeb93xz4vj93/!+Blockhit+Fix+[182's+Tap].zip/file",
+        "blockhit-splice": "https://www.mediafire.com/file/v7xhnsy1ua4vw0n/!+Blockhit+Fix+[182's+Splice].zip/file",
+        "blockhit-slide": "https://www.mediafire.com/file/erga6yu809znxj3/!+Blockhit+Fix+[182's+Slide].zip/file",
+        "blockhit-jigsaw": "https://www.mediafire.com/file/arrmp1lukwwcxhv/!+Blockhit+Fix+[182's+Jigsaw].zip/file",
+        "blockhit-autoblock": "https://www.mediafire.com/file/r9dnj8ygxlgyg34/!+Blockhit+Fix+[182's+Autoblock].zip/file"
     }
 };
