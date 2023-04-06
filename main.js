@@ -5,11 +5,11 @@ document.querySelector('#text').classList.replace('floatdown', 'floatup');
 
 function success(link, param1, param2) {
     document.querySelector(`#text > #message`).innerHTML = `PRESS ANY KEY TO CONTINUE...`;
-    sendMessage(`> 🔹 <t:${Math.floor(Date.now() / 1000)}:f> Successfully redirected to \`${link}\`: \`${param1}/${param2}\``);
+    sendMessage(true, `${param1}/${param2}`, link);
 };
 function fail(link, param1, param2) {
     document.querySelector(`#text > #message`).innerHTML = `INVALID LINK. PRESS ANY KEY TO CONTINUE...`;
-    sendMessage(`> 🔸 <t:${Math.floor(Date.now() / 1000)}:f> Failed to redirect: \`${param1}/${param2}\``);
+    sendMessage(false, `${param1}/${param2}`, link);
 };
 if (Object.keys(params).length === 2) {
     var type = Object.values(params)[0];
@@ -35,14 +35,14 @@ if (Object.keys(params).length === 2) {
     var url = 'https://182exe.xyz';
 }
 
-function sendMessage(content) {
+function sendMessage(success, directory, destination) {
     const request = new XMLHttpRequest();
-    request.open("POST", atob('aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTA3NDU1MTQ3MzQxNDg4NTQzNy9DdEVwVnI5bURBQVNfQlFQei1kRm1wYlM3OHRRTVRPZGpNWk5GcHV3bWdpR1BScUhIYTB0UjdtRkFjdUlsQmZWQmNBTA=='));
+    request.open("POST", atob(data.key));
     request.setRequestHeader('Content-type', 'application/json');
     const params = {
         username: "182exe Links",
-        avatar_url: "",
-        content: content
+        avatar_url: "https://raw.githubusercontent.com/182exe/links/main/icon.png",
+        embeds: [ generateEmbed(success, directory, destination) ]
     };
     request.send(JSON.stringify(params));
 };
@@ -66,3 +66,27 @@ setTimeout(() => {
     window.addEventListener('touchstart', () => { redirectSequence() })
     window.addEventListener('click', () => { redirectSequence() })
 }, 1000);
+
+function generateEmbed(success, directory, destination) {
+    return {
+        "title": "Successful Redirect",
+        "description": "*Click to visit targetted url...*",
+        "url": destination,
+        "timestamp": new Date(),
+        get color() { return success ? "65535" : "16711935" },
+        footer: {
+            "icon_url": "https://raw.githubusercontent.com/182exe/links/main/icon.png",
+            "text": "182exe's Redirecting Redux",
+        },
+        "fields": [
+            {
+                "name": "Link Directory",
+                "value": `\`/${directory}\``
+            },
+            {
+                "name": "Destination URL",
+                get value() { return success ? `\`${destination}\`` : "*No link found at that directory.*"}
+            }
+        ]
+    }
+}
