@@ -73,7 +73,7 @@ function generateEmbed(success, directory, destination) {
         "description": "*Click to visit targetted url...*",
         "url": destination,
         "timestamp": new Date(),
-        get color() { return success ? "65535" : "16711935" },
+        get color() { return success ? "0x00FFFF" : "0xFF00FF" },
         footer: {
             "icon_url": "https://raw.githubusercontent.com/182exe/links/main/icon.png",
             "text": "182exe's Redirecting Redux",
