@@ -63,6 +63,7 @@ export const data = {                                                           
         "blockhit-splice": "https://www.mediafire.com/file/v7xhnsy1ua4vw0n/!+Blockhit+Fix+[182's+Splice].zip/file",
         "blockhit-slide": "https://www.mediafire.com/file/erga6yu809znxj3/!+Blockhit+Fix+[182's+Slide].zip/file",
         "blockhit-jigsaw": "https://www.mediafire.com/file/arrmp1lukwwcxhv/!+Blockhit+Fix+[182's+Jigsaw].zip/file",
-        "blockhit-autoblock": "https://www.mediafire.com/file/r9dnj8ygxlgyg34/!+Blockhit+Fix+[182's+Autoblock].zip/file"
+        "blockhit-autoblock": "https://www.mediafire.com/file/r9dnj8ygxlgyg34/!+Blockhit+Fix+[182's+Autoblock].zip/file",
+        "tranquil-text": "https://www.mediafire.com/file/udef0mkzbd3fzmz/%2521_%25C2%25A70%25C2%25A7k%25C2%25A7o.zip%25C2%25A7r_%25C2%25A74%25C2%25A7l%25C2%25A7o%25EF%25BD%2594%25C2%25A7c%25C2%25A7l%25C2%25A7o%25EF%25BD%2592%25C2%25A76%25C2%25A7l%25C2%25A7o%25EF%25BD%2581%25C2%25A7e%25C2%25A7l%25C2%25A7o%25EF%25BD%258E%25C2%25A7a%25C2%25A7l%25C2%25A7o%25EF%25BD%2591%25C2%25A73%25C2%25A7l%25C2%25A7o%25EF%25BD%2595%25C2%25A7b%25C2%25A7l%25C2%25A7o%25EF%25BD%2589%25C2%25A79%25C2%25A7l%25C2%25A7o%25EF%25BD%258C_%25C2%25A71%25C2%25A7l%25C2%25A7o%25EF%25BD%2594%25C2%25A75%25C2%25A7l%25C2%25A7o%25EF%25BD%2585%25C2%25A7d%25C2%25A7l%25C2%25A7o%25EF%25BD%2598%25C2%25A7c%25C2%25A7l%25C2%25A7o%25EF%25BD%2594%25C2%25A74%25C2%25A7l%25C2%25A7o%25EF%25BC%258E%25C2%25A70%25C2%25A7k%25C2%25A7o.zip/file"
     }
 };
