@@ -1,4 +1,4 @@
-export const data = {                                                                                                                                                                                                                                                                                                                                                                   "key": "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTA5MzM5NDUyMzgyNjE2MzcyMi9pRlIwVmF6M2lnQ2FVeHFkN2g3MklwajhXUWVQMjdtMTRzV0FaR3p3SEZSaWhCNWF4Y09PSlJCV09HaV8yamZyY1hZUA==",
+export const data = {
     "social": {
         "home": "https://182exe.xyz/",
         "youtube": "https://youtube.com/@182exe",
