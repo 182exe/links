@@ -5,11 +5,9 @@ document.querySelector('#text').classList.replace('floatdown', 'floatup');
 
 function success(link, param1, param2) {
     document.querySelector(`#text > #message`).innerHTML = `PRESS ANY KEY TO CONTINUE...`;
-    sendMessage(true, `${param1}/${param2}`, link);
 };
 function fail(link, param1, param2) {
     document.querySelector(`#text > #message`).innerHTML = `INVALID LINK. PRESS ANY KEY TO CONTINUE...`;
-    sendMessage(false, `${param1}/${param2}`, link);
 };
 if (Object.keys(params).length === 2) {
     var type = Object.values(params)[0];
@@ -37,7 +35,7 @@ if (Object.keys(params).length === 2) {
 
 function sendMessage(success, directory, destination) {
     const request = new XMLHttpRequest();
-    request.open("POST", atob(data.key));
+    request.open("POST", "please-stop-hecking-my-webhook.net");
     request.setRequestHeader('Content-type', 'application/json');
     const params = {
         username: "182exe Links",
