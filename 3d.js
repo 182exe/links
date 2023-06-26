@@ -35,7 +35,7 @@ function createRandomShape() {
   });
 
   const object = new THREE.Mesh(objGeo, objMat);
-  object.position.set((Math.random() * 3) - 1.5, Math.floor(Math.random() * 4), (Math.random() * 3) - 1.5);
+  object.position.set(0, Math.floor(Math.random() * 4), 0);
   object.castShadow = true;
   scene.add(object);
 
@@ -57,7 +57,7 @@ function createRandomShape() {
   scene.add(light4);
 }
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 3; i++) {
   createRandomShape();
 }
 
