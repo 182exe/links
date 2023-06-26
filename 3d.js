@@ -25,7 +25,7 @@ element.classList.add('floatup');
 renderer.setSize(window.innerWidth, window.innerHeight);
 
 function createRandomShape() {
-  const randomShiny = Math.floor(Math.random() * (50 - 15 + 1) + 15)
+  const randomShiny = Math.floor(Math.random() * (50 - 15 + 1) + 15);
   const objGeo = new THREE.TorusKnotGeometry(3, Math.random() * (1.0 - 0.2) + 0.2, 500, 200, Math.floor(Math.random() * (10 - 1 + 1) + 1), Math.floor(Math.random() * (10 - 1 + 1) + 1));
   const objMat = new THREE.MeshPhongMaterial({
     shininess: randomShiny,
@@ -35,35 +35,31 @@ function createRandomShape() {
   });
 
   const object = new THREE.Mesh(objGeo, objMat);
-  object.position.set(
-    Math.random() * (20 - (-20)) + (-20),
-    Math.random() * (10 - 1) + 1,
-    Math.random() * (20 - (-20)) + (-20)
-  );
+  object.position.set((Math.random() * 3) - 1.5, Math.floor(Math.random() * 4), (Math.random() * 3) - 1.5);
   object.castShadow = true;
   scene.add(object);
+
+  const light1 = new THREE.PointLight(0xFFFF00, 1, 0);
+  light1.position.copy(object.position);
+  light1.castShadow = true;
+  scene.add(light1);
+  const light2 = new THREE.PointLight(0x00FFFF, 1, 0);
+  light2.position.copy(object.position);
+  light2.castShadow = true;
+  scene.add(light2);
+  const light3 = new THREE.PointLight(0xFF00FF, 1, 0);
+  light3.position.copy(object.position);
+  light3.castShadow = true;
+  scene.add(light3);
+  const light4 = new THREE.PointLight(0xFFFFFF, 1, 0);
+  light4.position.copy(object.position);
+  light4.castShadow = true;
+  scene.add(light4);
 }
 
 for (let i = 0; i < 5; i++) {
   createRandomShape();
 }
-
-const light1 = new THREE.PointLight(0xFFFF00, 1, 0);
-light1.position.set(-10, 20, 10);
-light1.castShadow = true;
-scene.add(light1);
-const light2 = new THREE.PointLight(0x00FFFF, 1, 0);
-light2.position.set(-10, 20, -10);
-light2.castShadow = true;
-scene.add(light2);
-const light3 = new THREE.PointLight(0xFF00FF, 1, 0);
-light3.position.set(10, 20, -10);
-light3.castShadow = true;
-scene.add(light3);
-const light4 = new THREE.PointLight(0xFFFFFF, 1, 0);
-light4.position.set(10, 0, -10);
-light4.castShadow = true;
-scene.add(light4);
 
 function animate() {
   requestAnimationFrame(animate);
