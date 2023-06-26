@@ -2,7 +2,7 @@ import * as THREE from 'https://unpkg.com/three/build/three.module.js';
 import { OrbitControls } from 'https://unpkg.com/three/examples/jsm/controls/OrbitControls.js';
 
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.set(0, 7, 15);
 
 const renderer = new THREE.WebGLRenderer({
@@ -57,7 +57,7 @@ function createRandomShape() {
   scene.add(light4);
 }
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 15; i++) {
   createRandomShape();
 }
 
