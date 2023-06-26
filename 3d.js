@@ -45,19 +45,15 @@ for (let i = 0; i < 3; i++) {
 }
 
 const light1 = new THREE.PointLight(0xFFFF00, 1, 0);
-  light1.position.copy(object.position);
   light1.castShadow = true;
   scene.add(light1);
   const light2 = new THREE.PointLight(0x00FFFF, 1, 0);
-  light2.position.copy(object.position);
   light2.castShadow = true;
   scene.add(light2);
   const light3 = new THREE.PointLight(0xFF00FF, 1, 0);
-  light3.position.copy(object.position);
   light3.castShadow = true;
   scene.add(light3);
   const light4 = new THREE.PointLight(0xFFFFFF, 1, 0);
-  light4.position.copy(object.position);
   light4.castShadow = true;
   scene.add(light4);
 
