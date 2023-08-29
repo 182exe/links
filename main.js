@@ -16,7 +16,7 @@ if (Object.keys(params).length === 2) {
         var url = data[type][index];
         success(url, type, index);
     } else {
-        var url = 'https://182exe.xyz';
+        var url = 'https://182exe.online';
         fail(url, type, index);
     }
 } else if (Object.keys(params).length === 1) {
@@ -25,12 +25,12 @@ if (Object.keys(params).length === 2) {
         var url = data['social'][index];
         success(url, type, index);
     } else {
-        var url = 'https://182exe.xyz';
+        var url = 'https://182exe.online';
         fail(url, type, index);
     }
 } else {
-    fail();
-    var url = 'https://182exe.xyz';
+    window.location.assign("https://182exe.online" + window.location.pathname)
+    var url = 'https://182exe.online';
 }
 
 function sendMessage(success, directory, destination) {
@@ -53,7 +53,7 @@ function redirectSequence() {
     const animated = document.querySelectorAll('.floatup');
     [...animated].forEach(element => {
         element.classList.replace('floatup', 'floatdown');
-    }); 
+    });
     setTimeout(() => {
         window.location.replace(url);
     }, 1000);
