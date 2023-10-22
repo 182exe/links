@@ -1,6 +1,7 @@
 export const data = {
     "social": {
-        "home": "https://182exe.xyz/",
+        "home": "https://182.ooo/",
+        "src": "https://github.com/182exe/links",
         "youtube": "https://youtube.com/@182exe",
         "discord": "https://discord.gg/nTBKbg9gGu",
         "namemc": "https://namemc.com/search?q=c26a09c4341d4ed2a789270ced42da52",
