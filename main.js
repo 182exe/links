@@ -29,21 +29,9 @@ if (Object.keys(params).length === 2) {
         fail(url, type, index);
     }
 } else {
-    window.location.assign("https://182exe.online" + window.location.pathname)
-    var url = 'https://182exe.online';
+    //window.location.assign("https://182exe.online" + window.location.pathname)
+    //var url = 'https://182exe.online';
 }
-
-function sendMessage(success, directory, destination) {
-    const request = new XMLHttpRequest();
-    request.open("POST", "please-stop-hecking-my-webhook.net");
-    request.setRequestHeader('Content-type', 'application/json');
-    const params = {
-        username: "182exe Links",
-        avatar_url: "https://raw.githubusercontent.com/182exe/links/main/icon.png",
-        embeds: [ generateEmbed(success, directory, destination) ]
-    };
-    request.send(JSON.stringify(params));
-};
 
 function redirectSequence() {
     document.body.classList.add('blackness');
@@ -55,7 +43,7 @@ function redirectSequence() {
         element.classList.replace('floatup', 'floatdown');
     });
     setTimeout(() => {
-        window.location.replace(url);
+        //window.location.replace(url);
     }, 1000);
 };
 
@@ -64,27 +52,3 @@ setTimeout(() => {
     window.addEventListener('touchstart', () => { redirectSequence() })
     window.addEventListener('click', () => { redirectSequence() })
 }, 1000);
-
-function generateEmbed(success, directory, destination) {
-    return {
-        "title": "Successful Redirect",
-        "description": "*Click to visit targetted url...*",
-        "url": destination,
-        "timestamp": new Date(),
-        get color() { return success ? "0x00FFFF" : "0xFF00FF" },
-        footer: {
-            "icon_url": "https://raw.githubusercontent.com/182exe/links/main/icon.png",
-            "text": "182exe's Redirecting Redux",
-        },
-        "fields": [
-            {
-                "name": "Link Directory",
-                "value": `\`/${directory}\``
-            },
-            {
-                "name": "Destination URL",
-                get value() { return success ? `\`${destination}\`` : "*No link found at that directory.*"}
-            }
-        ]
-    }
-}
