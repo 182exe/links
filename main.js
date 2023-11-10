@@ -29,8 +29,8 @@ if (Object.keys(params).length === 2) {
         fail(url, type, index);
     }
 } else {
-    //window.location.assign("https://182exe.online" + window.location.pathname)
-    //var url = 'https://182exe.online';
+    window.location.assign("https://182exe.online" + window.location.pathname)
+    var url = 'https://182exe.online';
 }
 
 function redirectSequence() {
@@ -43,7 +43,7 @@ function redirectSequence() {
         element.classList.replace('floatup', 'floatdown');
     });
     setTimeout(() => {
-        //window.location.replace(url);
+        window.location.replace(url);
     }, 1000);
 };
 
