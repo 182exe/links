@@ -1,39 +1,42 @@
 import { data } from './links.js';
 const params = Object.fromEntries(new URLSearchParams(window.location.search));
+let assign = false;
+let url = ``;
 
 document.querySelector('#text').classList.replace('floatdown', 'floatup');
 
-function success(link, param1, param2) {
+function success(link) {
     document.querySelector(`#text > #message`).innerHTML = `PRESS ANY KEY TO CONTINUE...`;
 };
-function fail(link, param1, param2) {
+function fail(link) {
     document.querySelector(`#text > #message`).innerHTML = `INVALID LINK. PRESS ANY KEY TO CONTINUE...`;
 };
 if (Object.keys(params).length === 2) {
-    var type = Object.values(params)[0];
-    var index = Object.values(params)[1];
+    let type = Object.values(params)[0];
+    let index = Object.values(params)[1];
     if (data.hasOwnProperty(type) && data[type].hasOwnProperty(index)) {
-        var url = data[type][index];
-        success(url, type, index);
+        url = data[type][index];
+        success(url);
     } else {
-        var url = 'https://182exe.online';
-        fail(url, type, index);
+        url = 'https://182exe.online';
+        fail(url);
     }
 } else if (Object.keys(params).length === 1) {
     var index = Object.values(params)[0];
     if (data['social'].hasOwnProperty(index)) {
-        var url = data['social'][index];
-        success(url, type, index);
+        url = data['social'][index];
+        success(url);
     } else {
-        var url = 'https://182exe.online';
-        fail(url, type, index);
+        url = 'https://182exe.online';
+        fail(url);
     }
 } else {
-    window.location.assign("https://182exe.online" + window.location.pathname)
-    var url = 'https://182exe.online';
+    assign = true
+    success(url)
+    url = 'https://182exe.online';
 }
 
-function redirectSequence() {
+function redirectSequence(assign) {
     document.body.classList.add('blackness');
     [...document.querySelectorAll('.bgi')].forEach(element => {
         element.classList.add('blackness');
@@ -43,12 +46,16 @@ function redirectSequence() {
         element.classList.replace('floatup', 'floatdown');
     });
     setTimeout(() => {
-        window.location.replace(url);
+        if (assign) {
+            window.location.assign("https://182exe.online" + window.location.pathname)
+        } else {
+            window.location.replace(url);
+        }
     }, 1000);
 };
 
 setTimeout(() => {
-    window.addEventListener('keypress', () => { redirectSequence() });
-    window.addEventListener('touchstart', () => { redirectSequence() })
-    window.addEventListener('click', () => { redirectSequence() })
+    window.addEventListener('keypress', () => { redirectSequence(assign) });
+    window.addEventListener('touchstart', () => { redirectSequence(assign) })
+    window.addEventListener('click', () => { redirectSequence(assign) })
 }, 1000);

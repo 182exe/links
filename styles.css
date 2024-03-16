@@ -27,7 +27,6 @@ body {
     background: black;
     transition: 1s cubic-bezier(.75,0,1,0);
 }
-
 .floatup {
     animation: 1s float cubic-bezier(0,.75,0,1);
 }
@@ -37,7 +36,7 @@ body {
     transition: 1s cubic-bezier(.75,0,1,0);
 }
 @keyframes float {
-    from { transform: scale(10%) translatey(80%); opacity: 0; }
+    from { transform: scale(5%) translatey(100%); opacity: 0; }
     tp { transform: scale(100%) translatey(0%); opacity: 1; }
 }
 

@@ -47,16 +47,12 @@ element.classList.add('floatup');
 renderer.setSize(window.innerWidth, window.innerHeight);
 
 function createRandomShape() {
-    const texture = new THREE.TextureLoader().load("texture.png");
-    texture.wrapS = THREE.RepeatWrapping;
-    texture.wrapT = THREE.RepeatWrapping;
-    texture.repeat.set(1, 1);
     const geoRand = ~~(Math.random() * 10 + 2)
-    const randomShiny = Math.floor(Math.random() * (50 - 15 + 1) + 50);
+    const randomShiny = ~~(Math.random() * (50 - 15 + 1) + 50);
     const objGeo = new THREE.TorusKnotGeometry(
-        10,
-        geoRand * 2 / 100,
-        1000,
+        12.5,
+        geoRand * 2 / 15,
+        2500,
         6,
         4,
         geoRand * 2
@@ -66,9 +62,6 @@ function createRandomShape() {
         specular: 0xFFFFFF,
         color: 0x111111,
         emissive: 0x000000,
-        specularMap: texture,
-        displacementMap: texture,
-        displacementScale: 2,
         flatShading: false
     });
 
